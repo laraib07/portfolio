@@ -1,5 +1,19 @@
-<script setup></script>
+<script setup>
+import Header from "./partials/Header.vue";
+import Hero from "./partials/Hero.vue";
+import About from "./partials/About.vue";
+import Experience from "./partials/Experience.vue";
+import Portfolio from "./partials/Portfolio.vue";
+import Skills from "./partials/Skills.vue";
+import Contact from "./partials/Contact.vue";
+</script>
 
 <template>
-  <h1 class="underline text-6xl text-center">Hello world</h1>
+  <Header />
+  <Hero />
+  <About />
+  <Experience />
+  <Portfolio />
+  <Skills />
+  <Contact />
 </template>

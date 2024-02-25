@@ -25,7 +25,7 @@ getData();
     <About />
     <Experience />
     <Portfolio :projects="data['portfolio']" />
-    <Skills />
+    <Skills :skills="data['skills']" />
     <Contact />
   </div>
 </template>

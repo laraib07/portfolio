@@ -52,7 +52,14 @@
   "skills": [
     {
       "title": "Frontend",
-      "skills": ["HTML", "CSS", "Javascript", "Vue", "TailwindCSS", "Bootstrap"]
+      "skills": [
+        "HTML",
+        "CSS",
+        "TailwindCSS",
+        "Bootstrap",
+        "Javascript",
+        "VueJS"
+      ]
     },
     {
       "title": "Backend",

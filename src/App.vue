@@ -20,7 +20,7 @@ getData();
 
 <template>
   <div v-if="data">
-    <Header />
+    <Header :resume-link="data['resume']" />
     <Hero />
     <About />
     <Experience />

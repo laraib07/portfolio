@@ -5,6 +5,13 @@ import BrandLogo from "../components/BrandLogo.vue";
 const top = ref(true);
 const drawerOpen = ref(false);
 
+defineProps({
+  resumeLink: {
+    type: String,
+    required: true,
+  },
+});
+
 onMounted(() => {
   window.addEventListener("scroll", () => {
     if (top.value && window.scrollY > 10) {
@@ -27,7 +34,11 @@ onMounted(() => {
       <div class="flex flex-row flex-1 justify-between items-center">
         <BrandLogo />
         <div>
-          <a target="_blank" class="btn btn-primary border-2 mr-2 lg:hidden">
+          <a
+            :href="resumeLink"
+            target="_blank"
+            class="btn btn-primary border-2 mr-2 lg:hidden"
+          >
             Resume
           </a>
           <button
@@ -70,7 +81,11 @@ onMounted(() => {
         <a href="#contact" class="btn btn-ghost">Contact</a>
       </nav>
 
-      <a target="_blank" class="hidden btn btn-primary border-2 ml-2 lg:flex">
+      <a
+        :href="resumeLink"
+        target="_blank"
+        class="hidden btn btn-primary border-2 ml-2 lg:flex"
+      >
         Resume
       </a>
     </div>

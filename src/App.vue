@@ -7,6 +7,7 @@ import Experience from "./partials/Experience.vue";
 import Portfolio from "./partials/Portfolio.vue";
 import Skills from "./partials/Skills.vue";
 import Contact from "./partials/Contact.vue";
+import Footer from "./partials/Footer.vue";
 
 const data = ref(null);
 
@@ -27,5 +28,6 @@ getData();
     <Portfolio :projects="data['portfolio']" />
     <Skills :skills="data['skills']" />
     <Contact />
+    <Footer />
   </div>
 </template>

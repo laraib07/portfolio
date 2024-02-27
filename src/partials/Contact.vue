@@ -107,7 +107,9 @@ function submitForm(event) {
               type="submit"
               class="btn btn-primary w-full"
             >
-              Submit
+              <span :class="{ 'animate-spin': loading }">{{
+                loading ? "&#8635;" : "Submit"
+              }}</span>
             </button>
           </form>
           <Alert :alert="alert" />

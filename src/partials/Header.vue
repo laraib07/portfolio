@@ -25,14 +25,16 @@ onMounted(() => {
 
 <template>
   <header
-    :class="{ 'shadow-md': !top }"
-    class="fixed top-0 right-0 left-0 px-4 py-2 backdrop-blur bg-base-100/30 z-50"
+    :class="{ 'shadow-md backdrop-blur': !top }"
+    class="fixed top-0 right-0 left-0 px-4 py-2 bg-base-100/50 z-50"
   >
     <div
       class="flex flex-col max-w-screen-xl mx-auto lg:items-center lg:flex-row"
     >
       <div class="flex flex-row flex-1 justify-between items-center">
-        <BrandLogo />
+        <a href="#hero">
+          <BrandLogo />
+        </a>
         <div>
           <a
             :href="resumeLink"

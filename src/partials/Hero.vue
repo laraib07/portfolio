@@ -12,7 +12,7 @@
       <div class="flex flex-col items-center text-center w-full">
         <h1 class="text-6xl font-extrabold sm:text-8xl">Hi, I am Laraib</h1>
         <p
-          class="text-xl mt-6 p-4 border-2 rounded-md border-base-300 bg-base-100"
+          class="text-lg mt-6 p-4 border-2 rounded-md border-base-300 bg-base-100 sm:text-xl"
         >
           A
           <span
@@ -28,7 +28,11 @@
           <a href="#contact" class="btn border-2 ml-4">Contact</a>
         </div>
 
-        <div class="absolute bottom-8 text-4xl animate-bounce">&darr;</div>
+        <div
+          class="absolute bottom-8 text-6xl animate-bounce bg-gradient-to-b from-primary to-secondary bg-clip-text text-transparent"
+        >
+          &darr;
+        </div>
       </div>
     </div>
   </section>

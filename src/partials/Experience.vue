@@ -16,7 +16,7 @@
               clip-rule="evenodd"
             />
           </svg>
-          <h4 class="font-bold text-base-content pl-6">
+          <h4 class="font-semibold text-base-content pl-6">
             Fullstack Developer | Cloudinators
           </h4>
 
@@ -27,9 +27,9 @@
               and Blade Template for streamlined front-end design. Ensured code
               integrity and scalability for optimal website performance.
             </p>
-            <span class="mt-1 block text-sm font-semibold text-base-content"
-              >2023 - current
-            </span>
+            <p class="mt-1 block text-sm font-semibold text-base-content">
+              2023 - current
+            </p>
           </div>
         </div>
       </div>

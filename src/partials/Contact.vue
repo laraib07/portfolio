@@ -1,8 +1,118 @@
+<script setup>
+import { ref } from "vue";
+import Alert from "../components/Alert.vue";
+
+const scriptURL = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
+const alertTimeout = 5000;
+
+const loading = ref(false);
+const alert = ref({
+  message: null,
+  success: false,
+});
+
+function validateForm(form) {
+  const inputs = form.querySelectorAll("input, textarea");
+  let valid = true;
+
+  for (let input of inputs) {
+    valid &= input.value != "";
+  }
+  return valid;
+}
+
+function updateAlert(message, success) {
+  alert.value.message = message;
+  alert.value.success = success;
+
+  setTimeout(function () {
+    alert.value.message = null;
+    alert.value.success = false;
+  }, alertTimeout);
+}
+
+function submitForm(event) {
+  const form = event.target;
+
+  if (!validateForm(form)) {
+    updateAlert("Fill form properly!", false);
+    return;
+  }
+
+  const controller = new AbortController();
+  const signal = controller.signal;
+
+  setTimeout(() => {
+    controller.abort();
+  }, 15000);
+
+  loading.value = true;
+
+  fetch(scriptURL, { method: "POST", body: new FormData(form), signal })
+    .then((response) => {
+      if (!response.ok) {
+        throw Error("Failed to send message!");
+      }
+      updateAlert("Message sent successfully!", true);
+      form.reset();
+    })
+    .catch((err) => {
+      updateAlert(err.message, false);
+    })
+    .finally(() => {
+      loading.value = false;
+    });
+}
+</script>
+
 <template>
-  <section
-    id="contact"
-    class="grid place-content-center h-screen w-full text-4xl"
-  >
-    Work Under Progress
+  <section id="contact" class="w-full px-4 py-16 bg-base-200">
+    <div class="mx-auto max-w-screen-xl lg:w-4/5">
+      <h1 class="text-4xl font-semibold sm:text-6xl">Contact</h1>
+      <div class="flex flex-col pt-6 gap-8 md:flex-row">
+        <div class="w-full md:w-1/2">
+          <p>
+            Feel free to drop me a message! Whether you have a project in mind
+            or just want to say hello, I'm all ears. I look forward to
+            connecting with you and exploring how we can collaborate on
+            something amazing!
+          </p>
+        </div>
+        <div class="flex flex-col w-full md:w-1/2">
+          <form
+            name="submit-to-google-sheet"
+            class="flex flex-col space-y-4 p-8 bg-base-100 rounded-md"
+            @submit.prevent="submitForm"
+          >
+            <input
+              type="text"
+              placeholder="Full Name"
+              name="Name"
+              class="input input-bordered w-full"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="Email"
+              class="input input-bordered w-full"
+            />
+            <textarea
+              placeholder="Write you message..."
+              rows="4"
+              name="Message"
+              class="textarea textarea-bordered text-base"
+            ></textarea>
+            <button
+              :disabled="loading"
+              type="submit"
+              class="btn btn-primary w-full"
+            >
+              Submit
+            </button>
+          </form>
+          <Alert :alert="alert" />
+        </div>
+      </div>
+    </div>
   </section>
 </template>

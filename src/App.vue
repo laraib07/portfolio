@@ -24,7 +24,7 @@ getData();
     <Header :resume-link="data['resume']" />
     <Hero />
     <About />
-    <Experience />
+    <Experience :experience="data['experience']" />
     <Portfolio :projects="data['portfolio']" />
     <Skills :skills="data['skills']" />
     <Contact />

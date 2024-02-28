@@ -1,6 +1,17 @@
 {
   "resume": "https://drive.google.com/file/d/1s4FQ75wJZ37tTOYyg-aeyqrksg2JBp5g/view?usp=share_link",
 
+  "experience": [
+    {
+      "designation": "Fullstack Developer",
+      "company": "Cloudinators",
+      "from": "Dec 2023",
+      "to": "current",
+      "description": "Developed and implemented robust websites for businesses using PHP for backend logic, Laravel for efficient framework structuring, and Blade Template for streamlined front-end design. Ensured code integrity and scalability for optimal website performance.",
+      "skills": ["Laravel", "PHP", "HTML", "TailwindCSS"]
+    }
+  ],
+
   "portfolio": [
     {
       "id": 1,

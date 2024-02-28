@@ -26,11 +26,12 @@
           <a href="#contact" class="btn border-2 ml-4">Contact</a>
         </div>
 
-        <div
+        <a
+          href="#about"
           class="absolute bottom-8 text-6xl animate-bounce bg-gradient-to-b from-primary to-secondary bg-clip-text text-transparent"
         >
           &darr;
-        </div>
+        </a>
       </div>
     </div>
   </section>

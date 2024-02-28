@@ -2,7 +2,7 @@
   <section
     id="hero"
     class="w-full px-4 bg-base-100"
-    style="background-image: url('/portfolio/images/circuit-board.svg')"
+    style="background-image: url('./images/circuit-board.svg')"
   >
     <div
       class="relative grid place-content-center max-w-screen-xl h-[100vh] mx-auto"

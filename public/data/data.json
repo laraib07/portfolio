@@ -8,7 +8,7 @@
       "from": "Dec 2023",
       "to": "current",
       "description": "Developed and implemented robust websites for businesses using PHP for backend logic, Laravel for efficient framework structuring, and Blade Template for streamlined front-end design. Ensured code integrity and scalability for optimal website performance.",
-      "skills": ["Laravel", "PHP", "HTML", "TailwindCSS"]
+      "skills": ["Laravel", "HTML", "TailwindCSS", "Javascript"]
     }
   ],
 
@@ -16,7 +16,7 @@
     {
       "id": 1,
       "title": "Leomir Hotel",
-      "skills": ["Laravel", "PHP", "HTML", "TailwindCSS"],
+      "skills": ["Laravel", "HTML", "TailwindCSS", "Javascript"],
       "imgsrc": "./images/portfolio/leomir.webp",
       "desc": "Discover the charm of Leomir Hotel on the website I created. Immerse yourself in the inviting ambiance, explore amenities, and plan your stay effortlessly. ",
       "gitlink": null,
@@ -25,7 +25,7 @@
     {
       "id": 2,
       "title": "Portfolio",
-      "skills": ["HTML", "TailwindCSS", "AlpineJS"],
+      "skills": ["VueJS", "TailwindCSS"],
       "imgsrc": "./images/portfolio/portfolio.webp",
       "desc": "Explore the code behind my personal portfolio website! Crafted with love, it showcases my skills in web development.",
       "gitlink": "https://github.com/laraib07/portfolio",
@@ -78,7 +78,15 @@
     },
     {
       "title": "Tools & Platforms",
-      "skills": ["Git", "Github", "Linux", "Vercel", "Hostinger", "Firebase"]
+      "skills": [
+        "Git",
+        "Github",
+        "Linux",
+        "Vercel",
+        "Hostinger",
+        "Github Pages",
+        "Firebase"
+      ]
     },
     {
       "title": "Database",

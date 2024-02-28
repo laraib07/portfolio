@@ -12,7 +12,9 @@ import Footer from "./partials/Footer.vue";
 const data = ref(null);
 
 async function getData() {
-  const res = await fetch("/data/data.json").then((res) => res.json());
+  const res = await fetch("/portfolio/data/data.json").then((res) =>
+    res.json()
+  );
   data.value = res;
 }
 

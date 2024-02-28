@@ -25,7 +25,7 @@ import Leetcode from "../components/icons/Leetcode.vue";
           <a
             href="https://github.com/laraib07"
             target="_blank"
-            class="hover:opacity-85"
+            class="opacity-90 hover:opacity-100"
           >
             <Github />
           </a>
@@ -33,7 +33,7 @@ import Leetcode from "../components/icons/Leetcode.vue";
           <a
             href="https://www.linkedin.com/in/laraib07/"
             target="_blank"
-            class="hover:opacity-85"
+            class="opacity-90 hover:opacity-100"
           >
             <Linkedin />
           </a>
@@ -41,7 +41,7 @@ import Leetcode from "../components/icons/Leetcode.vue";
           <a
             href="https://leetcode.com/laraib07/"
             target="_blank"
-            class="hover:opacity-85"
+            class="opacity-90 hover:opacity-100"
           >
             <Leetcode />
           </a>

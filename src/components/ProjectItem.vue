@@ -1,5 +1,4 @@
 <script setup>
-import Github from "../components/icons/Github.vue";
 import SkillItem from "./SkillItem.vue";
 
 defineProps({
@@ -28,25 +27,23 @@ defineProps({
       <h2 class="font-medium text-2xl py-2" v-text="project.title"></h2>
       <p class="text-sm" v-text="project.desc"></p>
     </div>
-    <div class="items-start bg-base-300 w-full px-4 py-8">
-      <div class="relative flex items-center bg-base-300 w-full">
-        <a
-          :href="project.gitlink"
-          target="_blank"
-          v-show="project.gitlink"
-          class="absolute left-0 hover:opacity-85"
-        >
-          <Github />
-        </a>
-        <a
-          :href="project.demo"
-          target="_blank"
-          v-show="project.demo"
-          class="btn btn-outline btn-sm absolute right-0"
-        >
-          Demo
-        </a>
-      </div>
+    <div class="flex flex-row w-full p-4 gap-2">
+      <a
+        :href="project.gitlink"
+        target="_blank"
+        v-show="project.gitlink"
+        class="btn btn-outline border-2 w-1/2 grow"
+      >
+        Github
+      </a>
+      <a
+        :href="project.demo"
+        target="_blank"
+        v-show="project.demo"
+        class="btn btn-neutral w-1/2 grow"
+      >
+        Visit
+      </a>
     </div>
   </div>
 </template>

@@ -20,7 +20,7 @@ defineProps({
     <p class="pt-2 text-sm text-base-content">
       {{ experience.description }}
     </p>
-    <div class="flex flex-wrap gap-2 pt-4 text-xs">
+    <div class="flex flex-wrap gap-2 pt-4 text-sm">
       <SkillItem v-for="skill of experience.skills" :skill="skill" />
     </div>
   </div>

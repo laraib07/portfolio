@@ -22,7 +22,7 @@ defineProps({
       />
     </div>
     <div class="p-4 grow">
-      <div class="flex flex-wrap gap-2 text-xs">
+      <div class="flex flex-wrap gap-2 text-sm">
         <SkillItem v-for="skill of project.skills" :skill="skill" />
       </div>
       <h2 class="font-medium text-2xl py-2" v-text="project.title"></h2>

@@ -1,5 +1,5 @@
 <script setup>
-import { onBeforeMount, ref } from "vue";
+import { ref } from "vue";
 import Header from "./partials/Header.vue";
 import Hero from "./partials/Hero.vue";
 import About from "./partials/About.vue";

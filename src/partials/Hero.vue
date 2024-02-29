@@ -1,3 +1,8 @@
+<script setup>
+import Greet from "@/components/Greet.vue";
+
+const name = "Laraib";
+</script>
 <template>
   <section
     id="hero"
@@ -8,7 +13,10 @@
       class="relative grid place-content-center max-w-screen-xl h-[100vh] mx-auto"
     >
       <div class="flex flex-col items-center text-center w-full">
-        <h1 class="text-6xl font-extrabold sm:text-8xl">Hi, I am Laraib</h1>
+        <h1 class="text-6xl font-black sm:text-8xl">
+          <Greet :name="name" />
+        </h1>
+
         <p
           class="text-lg mt-6 p-4 border-2 rounded-md border-base-300 bg-base-100 sm:text-xl"
         >

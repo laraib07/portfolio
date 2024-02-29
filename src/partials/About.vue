@@ -6,7 +6,7 @@ import Leetcode from "../components/icons/Leetcode.vue";
 
 <template>
   <section id="about" class="w-full px-4 py-16 bg-base-200">
-    <div class="flex flex-col mx-auto max-w-screen-xl lg:flex-row lg:w-4/5">
+    <div class="flex flex-col mx-auto max-w-screen-xl lg:flex-row lg:w-[90vw]">
       <div
         class="w-full max-h-[400px] bg-neutral-700 rounded-lg overflow-hidden lg:w-1/2"
       >

@@ -13,15 +13,17 @@ const alert = ref({
 
 function validateForm(form) {
   const inputs = form.querySelectorAll("input, textarea");
-  let valid = true;
 
   for (let input of inputs) {
-    valid &= input.value != "";
+    if (input.value == "") {
+      setAlert(input.getAttribute("name") + " not filled!", false);
+      return false;
+    }
   }
-  return valid;
+  return true;
 }
 
-function updateAlert(message, success) {
+function setAlert(message, success) {
   alert.value.message = message;
   alert.value.success = success;
 
@@ -35,7 +37,6 @@ function submitForm(event) {
   const form = event.target;
 
   if (!validateForm(form)) {
-    updateAlert("Fill form properly!", false);
     return;
   }
 
@@ -53,11 +54,11 @@ function submitForm(event) {
       if (!response.ok) {
         throw Error("Failed to send message!");
       }
-      updateAlert("Message sent successfully!", true);
+      setAlert("Message sent successfully!", true);
       form.reset();
     })
     .catch((err) => {
-      updateAlert(err.message, false);
+      setAlert(err.message, false);
     })
     .finally(() => {
       loading.value = false;

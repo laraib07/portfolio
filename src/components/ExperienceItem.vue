@@ -10,11 +10,11 @@ defineProps({
 </script>
 
 <template>
-  <div class="w-full pt-8 first-of-type:pt-0">
+  <div class="pt-8 first-of-type:pt-0">
     <h4 class="font-semibold text-base-content">
       {{ experience.designation }} | {{ experience.company }}
     </h4>
-    <time class="mt-1 block text-sm text-base-content">
+    <time class="pt-2 block text-sm text-base-content">
       {{ experience.from }} - {{ experience.to }}
     </time>
     <p class="pt-2 text-sm text-base-content">

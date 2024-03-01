@@ -71,7 +71,7 @@ function submitForm(event) {
     <div class="mx-auto max-w-screen-xl lg:w-[90vw]">
       <h1 class="text-4xl font-semibold sm:text-6xl">Contact</h1>
       <div class="flex flex-col pt-6 gap-8 md:flex-row">
-        <div class="w-full md:w-1/2">
+        <div class="md:w-1/2">
           <p>
             Feel free to drop me a message! Whether you have a project in mind
             or just want to say hello, I'm all ears. I look forward to
@@ -79,7 +79,7 @@ function submitForm(event) {
             something amazing!
           </p>
         </div>
-        <div class="flex flex-col w-full md:w-1/2">
+        <div class="md:w-1/2">
           <form
             name="submit-to-google-sheet"
             class="flex flex-col space-y-4 p-8 bg-base-100 rounded-md"

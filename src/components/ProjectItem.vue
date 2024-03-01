@@ -11,9 +11,9 @@ defineProps({
 
 <template>
   <div
-    class="flex flex-col w-full rounded-md overflow-hidden group bg-base-100 shadow-sm duration-500 ease-in-out hover:shadow-lg"
+    class="flex flex-col rounded-md overflow-hidden group bg-base-100 shadow-sm duration-500 ease-in-out hover:shadow-lg"
   >
-    <div class="w-full h-[150px] overflow-hidden">
+    <div class="h-[150px] overflow-hidden">
       <img
         :src="project.imgsrc"
         :alt="project.title"
@@ -27,12 +27,12 @@ defineProps({
       <h2 class="font-medium text-2xl py-2" v-text="project.title"></h2>
       <p class="text-sm" v-text="project.desc"></p>
     </div>
-    <div class="flex flex-row w-full p-4 gap-2">
+    <div class="flex flex-row p-4 gap-2">
       <a
         :href="project.gitlink"
         target="_blank"
         v-show="project.gitlink"
-        class="btn btn-outline border-2 w-1/2 grow"
+        class="btn btn-outline border-2 grow"
       >
         Github
       </a>
@@ -40,7 +40,7 @@ defineProps({
         :href="project.demo"
         target="_blank"
         v-show="project.demo"
-        class="btn btn-neutral w-1/2 grow"
+        class="btn btn-neutral grow"
       >
         Visit
       </a>

@@ -20,7 +20,7 @@ defineProps({
           <a
             href="https://github.com/laraib07"
             target="_blank"
-            class="btn btn-outline border-2 group"
+            class="group text-blue-500 hover:underline"
           >
             See more
             <span class="inline-block duration-200 group-hover:translate-x-2"

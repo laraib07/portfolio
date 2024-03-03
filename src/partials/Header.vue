@@ -12,6 +12,12 @@ defineProps({
   },
 });
 
+function toggleDrawer() {
+  if (window.innerWidth <= 1024) {
+    drawerOpen.value = !drawerOpen.value;
+  }
+}
+
 onMounted(() => {
   window.addEventListener("scroll", () => {
     if (top.value && window.scrollY > 10) {
@@ -25,7 +31,7 @@ onMounted(() => {
 
 <template>
   <header
-    :class="{ 'shadow-md backdrop-blur': !top }"
+    :class="{ 'shadow-md backdrop-blur': !top | drawerOpen }"
     class="fixed top-0 right-0 left-0 px-4 py-2 bg-base-100/50 z-50"
   >
     <div
@@ -74,7 +80,7 @@ onMounted(() => {
       <nav
         :class="{ hidden: !drawerOpen, flex: drawerOpen }"
         class="flex flex-col lg:flex lg:flex-row lg:items-center"
-        @click="drawerOpen = !drawerOpen"
+        @click="toggleDrawer"
       >
         <a href="#about" class="btn btn-ghost">About</a>
         <a href="#experience" class="btn btn-ghost">Experience</a>

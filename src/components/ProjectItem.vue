@@ -32,7 +32,7 @@ defineProps({
         :href="project.gitlink"
         target="_blank"
         v-show="project.gitlink"
-        class="btn btn-outline border-2 grow"
+        class="btn btn-outline border-2 flex-1"
       >
         Github
       </a>
@@ -40,7 +40,7 @@ defineProps({
         :href="project.demo"
         target="_blank"
         v-show="project.demo"
-        class="btn btn-neutral grow"
+        class="btn btn-neutral flex-1"
       >
         Visit
       </a>

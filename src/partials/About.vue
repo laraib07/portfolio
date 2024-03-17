@@ -2,6 +2,7 @@
 import Github from "../components/icons/Github.vue";
 import Linkedin from "../components/icons/Linkedin.vue";
 import Leetcode from "../components/icons/Leetcode.vue";
+import Medium from "../components/icons/Medium.vue";
 </script>
 
 <template>
@@ -20,27 +21,19 @@ import Leetcode from "../components/icons/Leetcode.vue";
         </p>
         <div class="flex gap-4 items-center pt-6">
           <!-- Github  -->
-          <a
-            href="https://github.com/laraib07"
-            target="_blank"
-            class="opacity-90 hover:opacity-100"
-          >
+          <a href="https://github.com/laraib07" target="_blank" class="opacity-90 hover:opacity-100">
             <Github />
           </a>
           <!-- Linkedin -->
-          <a
-            href="https://www.linkedin.com/in/laraib07/"
-            target="_blank"
-            class="opacity-90 hover:opacity-100"
-          >
+          <a href="https://www.linkedin.com/in/laraib07/" target="_blank" class="opacity-90 hover:opacity-100">
             <Linkedin />
           </a>
+          <!-- Medium -->
+          <a href="https://medium.com/@work.laraib" target="_blank" class="opacity-90 hover:opacity-100">
+            <Medium />
+          </a>
           <!-- Leetcode -->
-          <a
-            href="https://leetcode.com/laraib07/"
-            target="_blank"
-            class="opacity-90 hover:opacity-100"
-          >
+          <a href="https://leetcode.com/laraib07/" target="_blank" class="opacity-90 hover:opacity-100">
             <Leetcode />
           </a>
         </div>

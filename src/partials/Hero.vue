@@ -13,8 +13,9 @@ const name = "Laraib";
       class="relative grid place-content-center max-w-screen-xl h-[100vh] mx-auto"
     >
       <div class="flex flex-col items-center text-center w-full">
-        <h1 class="text-6xl font-black sm:text-8xl">
-          <Greet :name="name" />
+        <h1 class="relative text-6xl font-black sm:text-8xl">
+          <Greet :name="name" class="blur-sm" />
+          <Greet :name="name" class="absolute inset-0" />
         </h1>
 
         <p

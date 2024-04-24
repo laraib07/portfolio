@@ -7,7 +7,7 @@ import Medium from "../components/icons/Medium.vue";
 
 <template>
   <section id="about" class="w-full px-4 py-16 bg-base-200">
-    <div class="flex flex-col mx-auto max-w-screen-xl lg:flex-row lg:w-[90vw]">
+    <div class="flex flex-col mx-auto max-w-screen-lg lg:flex-row">
       <div class="max-h-[400px] rounded-lg overflow-hidden lg:w-1/2">
         <img src="/images/my_image.webp" alt="Laraib's image" />
       </div>
@@ -21,19 +21,35 @@ import Medium from "../components/icons/Medium.vue";
         </p>
         <div class="flex gap-4 items-center pt-6">
           <!-- Github  -->
-          <a href="https://github.com/laraib07" target="_blank" class="opacity-90 hover:opacity-100">
+          <a
+            href="https://github.com/laraib07"
+            target="_blank"
+            class="opacity-90 hover:opacity-100"
+          >
             <Github />
           </a>
           <!-- Linkedin -->
-          <a href="https://www.linkedin.com/in/laraib07/" target="_blank" class="opacity-90 hover:opacity-100">
+          <a
+            href="https://www.linkedin.com/in/laraib07/"
+            target="_blank"
+            class="opacity-90 hover:opacity-100"
+          >
             <Linkedin />
           </a>
           <!-- Medium -->
-          <a href="https://medium.com/@work.laraib" target="_blank" class="opacity-90 hover:opacity-100">
+          <a
+            href="https://medium.com/@work.laraib"
+            target="_blank"
+            class="opacity-90 hover:opacity-100"
+          >
             <Medium />
           </a>
           <!-- Leetcode -->
-          <a href="https://leetcode.com/laraib07/" target="_blank" class="opacity-90 hover:opacity-100">
+          <a
+            href="https://leetcode.com/laraib07/"
+            target="_blank"
+            class="opacity-90 hover:opacity-100"
+          >
             <Leetcode />
           </a>
         </div>

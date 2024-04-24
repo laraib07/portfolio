@@ -68,7 +68,7 @@ function submitForm(event) {
 
 <template>
   <section id="contact" class="w-full px-4 py-16 bg-base-200">
-    <div class="mx-auto max-w-screen-xl lg:w-[90vw]">
+    <div class="mx-auto max-w-screen-lg">
       <h1 class="text-4xl font-semibold sm:text-6xl">Contact</h1>
       <div class="flex flex-col pt-6 gap-8 md:flex-row">
         <div class="md:w-1/2">

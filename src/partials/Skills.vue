@@ -15,7 +15,7 @@ defineProps({
       <template v-for="skill of skills" :key="skill.title">
         <div class="pt-6">
           <h2 class="text-2xl font-medium" v-text="skill.title"></h2>
-          <div class="flex flex-wrap gap-2 pt-4">
+          <div class="flex flex-wrap gap-2 pt-3">
             <span
               v-for="name of skill.skills"
               class="btn btn-outline btn-sm border-2"

@@ -7,11 +7,24 @@ import Medium from "../components/icons/Medium.vue";
 
 <template>
   <section id="about" class="w-full px-4 py-16 bg-base-200">
-    <div class="flex flex-col mx-auto max-w-screen-lg lg:flex-row">
-      <div class="max-h-[400px] rounded-lg overflow-hidden lg:w-1/2">
-        <img src="/images/my_image.webp" alt="Laraib's image" />
+    <div
+      class="grid gap-8 mx-auto max-w-screen-lg place-items-center md:grid-cols-2"
+    >
+      <div
+        class="relative rounded-lg overflow-hidden w-full max-h-[400px] flex justify-center"
+      >
+        <img
+          src="/images/my_image.webp"
+          alt="Laraib's image"
+          class="object-cover w-full blur-sm brightness-50"
+        />
+        <img
+          src="/images/my_image.webp"
+          alt="Laraib's image"
+          class="absolute object-contain h-full"
+        />
       </div>
-      <div class="pt-8 lg:pl-8 lg:w-1/2">
+      <article>
         <h1 class="text-4xl font-semibold sm:text-6xl">About Me</h1>
         <p class="pt-6">
           Web developer specializing in full-stack development using Laravel,
@@ -53,7 +66,7 @@ import Medium from "../components/icons/Medium.vue";
             <Leetcode />
           </a>
         </div>
-      </div>
+      </article>
     </div>
   </section>
 </template>

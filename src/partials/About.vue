@@ -16,7 +16,7 @@ import Medium from "../components/icons/Medium.vue";
         <img
           src="/images/my_image.webp"
           alt="Laraib's image"
-          class="object-cover w-full blur-sm brightness-50"
+          class="object-cover w-full blur-sm"
         />
         <img
           src="/images/my_image.webp"

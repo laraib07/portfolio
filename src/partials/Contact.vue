@@ -70,51 +70,46 @@ function submitForm(event) {
   <section id="contact" class="w-full px-4 py-16 bg-base-200">
     <div class="mx-auto max-w-screen-lg">
       <h1 class="text-4xl font-semibold sm:text-6xl">Contact</h1>
-      <div class="flex flex-col pt-6 gap-8 md:flex-row">
-        <div class="md:w-1/2">
-          <p>
-            Feel free to drop me a message! Whether you have a project in mind
-            or just want to say hello, I'm all ears. I look forward to
-            connecting with you and exploring how we can collaborate on
-            something amazing!
-          </p>
-        </div>
-        <div class="md:w-1/2">
-          <form
-            name="submit-to-google-sheet"
-            class="flex flex-col space-y-4 p-8 bg-base-100 rounded-md"
-            @submit.prevent="submitForm"
+      <div class="grid pt-6 gap-8 md:grid-cols-2">
+        <p>
+          Feel free to drop me a message! Whether you have a project in mind or
+          just want to say hello, I'm all ears. I look forward to connecting
+          with you and exploring how we can collaborate on something amazing!
+        </p>
+        <form
+          name="submit-to-google-sheet"
+          class="flex flex-col space-y-4 p-8 bg-base-100 rounded-md"
+          @submit.prevent="submitForm"
+        >
+          <input
+            type="text"
+            placeholder="Full Name"
+            name="Name"
+            class="input input-bordered w-full"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            name="Email"
+            class="input input-bordered w-full"
+          />
+          <textarea
+            placeholder="Write you message..."
+            rows="4"
+            name="Message"
+            class="textarea textarea-bordered text-base"
+          ></textarea>
+          <button
+            :disabled="loading"
+            type="submit"
+            class="btn btn-primary w-full"
           >
-            <input
-              type="text"
-              placeholder="Full Name"
-              name="Name"
-              class="input input-bordered w-full"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              name="Email"
-              class="input input-bordered w-full"
-            />
-            <textarea
-              placeholder="Write you message..."
-              rows="4"
-              name="Message"
-              class="textarea textarea-bordered text-base"
-            ></textarea>
-            <button
-              :disabled="loading"
-              type="submit"
-              class="btn btn-primary w-full"
-            >
-              <span :class="{ 'animate-spin': loading }">{{
-                loading ? "&#8635;" : "Submit"
-              }}</span>
-            </button>
-          </form>
-          <Alert :alert="alert" />
-        </div>
+            <span :class="{ 'animate-spin': loading }">{{
+              loading ? "&#8635;" : "Submit"
+            }}</span>
+          </button>
+        </form>
+        <Alert :alert="alert" />
       </div>
     </div>
   </section>

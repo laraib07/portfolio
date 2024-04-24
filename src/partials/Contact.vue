@@ -69,7 +69,7 @@ function submitForm(event) {
 <template>
   <section id="contact" class="w-full px-4 py-16 bg-base-200">
     <div class="mx-auto max-w-screen-lg">
-      <h1 class="text-4xl font-semibold sm:text-6xl">Contact</h1>
+      <h2 class="text-4xl font-semibold sm:text-6xl">Contact</h2>
       <div class="grid pt-6 gap-8 md:grid-cols-2">
         <p>
           Feel free to drop me a message! Whether you have a project in mind or

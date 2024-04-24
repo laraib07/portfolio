@@ -25,7 +25,7 @@ import Medium from "../components/icons/Medium.vue";
         />
       </div>
       <article>
-        <h1 class="text-4xl font-semibold sm:text-6xl">About Me</h1>
+        <h2 class="text-4xl font-semibold sm:text-6xl">About Me</h2>
         <p class="pt-6">
           Web developer specializing in full-stack development using Laravel,
           Django, MERN, MEVN, HTML, CSS, and JavaScript. Committed to crafting

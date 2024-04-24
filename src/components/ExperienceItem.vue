@@ -11,9 +11,9 @@ defineProps({
 
 <template>
   <div class="pt-8 first-of-type:pt-0">
-    <h4 class="font-semibold text-base-content">
+    <h3 class="font-semibold text-base-content">
       {{ experience.designation }} | {{ experience.company }}
-    </h4>
+    </h3>
     <time class="pt-2 block text-sm text-base-content">
       {{ experience.from }} - {{ experience.to }}
     </time>

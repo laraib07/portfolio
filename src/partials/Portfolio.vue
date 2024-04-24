@@ -12,7 +12,7 @@ defineProps({
 <template>
   <section id="portfolio" class="w-full px-4 py-16 bg-base-200">
     <div class="mx-auto max-w-screen-lg">
-      <h1 class="text-4xl font-semibold sm:text-6xl">Portfolio</h1>
+      <h2 class="text-4xl font-semibold sm:text-6xl">Portfolio</h2>
       <div
         class="grid gap-8 pt-6 place-items-center sm:grid-cols-2 lg:grid-cols-3"
       >

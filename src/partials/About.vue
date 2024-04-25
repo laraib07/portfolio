@@ -25,14 +25,18 @@ import Medium from "../components/icons/Medium.vue";
         />
       </div>
       <article>
-        <h2 class="text-4xl font-semibold sm:text-6xl">About Me</h2>
-        <p class="pt-6">
+        <h2
+          class="text-4xl font-semibold tracking-tight leading-tight sm:text-6xl"
+        >
+          About Me
+        </h2>
+        <p class="pt-4 text-base">
           Web developer specializing in full-stack development using Laravel,
           Django, MERN, MEVN, HTML, CSS, and JavaScript. Committed to crafting
           seamless and user-centric web experiences. Let's transform ideas into
           code and build something extraordinary together!
         </p>
-        <div class="flex gap-4 items-center pt-6">
+        <div class="flex gap-4 items-center pt-8">
           <!-- Github  -->
           <a
             href="https://github.com/laraib07"

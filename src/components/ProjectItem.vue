@@ -26,11 +26,11 @@ defineProps({
       />
     </div>
     <div class="p-4 grow">
-      <div class="flex flex-wrap gap-2 text-sm">
+      <div class="flex flex-wrap gap-1 text-xs">
         <SkillItem v-for="skill of project.skills" :skill="skill" />
       </div>
-      <h3 class="font-medium text-2xl py-2" v-text="project.title"></h3>
-      <p class="text-sm" v-text="project.desc"></p>
+      <h3 class="font-medium text-2xl mt-4" v-text="project.title"></h3>
+      <p class="text-base mt-2" v-text="project.desc"></p>
     </div>
     <div class="flex p-4 gap-2">
       <a

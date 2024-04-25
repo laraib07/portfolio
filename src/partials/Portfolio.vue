@@ -12,7 +12,11 @@ defineProps({
 <template>
   <section id="portfolio" class="w-full px-4 py-16 bg-base-200">
     <div class="mx-auto max-w-screen-lg">
-      <h2 class="text-4xl font-semibold sm:text-6xl">Portfolio</h2>
+      <h2
+        class="text-4xl font-semibold tracking-tight leading-tight sm:text-6xl"
+      >
+        Portfolio
+      </h2>
       <div class="grid gap-8 mt-4 sm:grid-cols-2 lg:grid-cols-3">
         <ProjectItem v-for="project of projects" :project="project" />
 

@@ -10,37 +10,42 @@ const name = "Laraib";
     style="background-image: url('./images/circuit-board.svg')"
   >
     <div
-      class="relative grid place-content-center max-w-screen-xl h-[100vh] mx-auto"
+      class="grid place-content-center gap-12 max-w-screen-xl h-screen mx-auto"
     >
-      <div class="flex flex-col items-center text-center w-full">
-        <h1 class="relative text-6xl font-black sm:text-8xl">
+      <article
+        class="text-center p-4 border-2 rounded-md border-base-300 bg-base-100 sm:text-xl sm:p-8"
+      >
+        <h1
+          class="relative text-6xl leading-tight tracking-tight font-black sm:text-8xl"
+        >
           <Greet :name="name" class="blur-sm" />
           <Greet :name="name" class="absolute inset-0" />
         </h1>
-
-        <p
-          class="text-lg mt-6 p-4 border-2 rounded-md border-base-300 bg-base-100 sm:text-xl"
-        >
+        <p class="pt-4 leading-snug">
           A
-          <span
-            class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
-          >
-            Fullstack Developer
+          <span class="relative">
+            <span
+              class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
+            >
+              Fullstack Developer
+            </span>
+            <span
+              class="absolute inset-0 blur-sm bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
+            >
+              Fullstack Developer
+            </span>
           </span>
           proficient in Laravel, Django and MEVN
         </p>
+      </article>
 
-        <div class="flex gap-2 pt-6">
-          <a href="#portfolio" class="btn btn-primary">Portfolio</a>
-          <a href="#contact" class="btn border-2 ml-4">Contact</a>
-        </div>
-
+      <div class="flex gap-2 justify-center">
+        <a href="#portfolio" class="btn btn-primary">Portfolio</a>
         <a
-          href="#about"
-          class="absolute bottom-8 text-6xl animate-bounce bg-gradient-to-b from-primary to-secondary bg-clip-text text-transparent"
+          href="#contact"
+          class="btn btn-outline bg-base-100 border-base-300 border-2 ml-4"
+          >Contact</a
         >
-          &darr;
-        </a>
       </div>
     </div>
   </section>

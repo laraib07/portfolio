@@ -1,14 +1,14 @@
 {
-  "resume": "https://drive.google.com/file/d/1s4FQ75wJZ37tTOYyg-aeyqrksg2JBp5g/view?usp=share_link",
+  "resume": "https://drive.google.com/file/d/1QsgPqQvDYD62aQUqFvvuHLYvflK-lfcw/view?usp=sharing",
 
   "experience": [
     {
       "designation": "Fullstack Developer",
       "company": "Cloudinators",
-      "from": "Dec 2023",
+      "from": "Jan 2023",
       "to": "current",
       "description": "Developed and implemented robust websites for businesses using PHP for backend logic, Laravel for efficient framework structuring, and Blade Template for streamlined front-end design. Ensured code integrity and scalability for optimal website performance.",
-      "skills": ["Laravel", "HTML", "TailwindCSS", "Javascript"]
+      "skills": ["Laravel", "TailwindCSS", "Javascript", "VueJS"]
     }
   ],
 
@@ -16,7 +16,7 @@
     {
       "id": 1,
       "title": "Leomir Hotel",
-      "skills": ["Laravel", "HTML", "TailwindCSS", "Javascript"],
+      "skills": ["Laravel", "TailwindCSS", "Javascript"],
       "imgsrc": "./images/portfolio/leomir.webp",
       "desc": "Discover the charm of Leomir Hotel on the website I created. Immerse yourself in the inviting ambiance, explore amenities, and plan your stay effortlessly. ",
       "gitlink": null,
@@ -81,6 +81,7 @@
       "skills": [
         "Git",
         "Github",
+        "GitLab",
         "Linux",
         "Vercel",
         "Hostinger",

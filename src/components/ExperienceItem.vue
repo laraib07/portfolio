@@ -10,17 +10,17 @@ defineProps({
 </script>
 
 <template>
-  <div class="pt-8 first-of-type:pt-0">
-    <h3 class="font-semibold text-base-content">
+  <div class="text-base text-base-content mt-8 first-of-type:mt-0">
+    <h3 class="font-semibold">
       {{ experience.designation }} | {{ experience.company }}
     </h3>
-    <time class="pt-2 block text-sm text-base-content">
+    <time class="mt-1 block text-base-content/80">
       {{ experience.from }} - {{ experience.to }}
     </time>
-    <p class="pt-2 text-sm text-base-content">
+    <p class="mt-2 text-base">
       {{ experience.description }}
     </p>
-    <div class="flex flex-wrap gap-2 pt-4 text-sm">
+    <div class="flex flex-wrap gap-1 mt-2 text-xs">
       <SkillItem v-for="skill of experience.skills" :skill="skill" />
     </div>
   </div>

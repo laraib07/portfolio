@@ -1,6 +1,4 @@
 <script setup>
-import SkillItem from "./SkillItem.vue";
-
 defineProps({
   project: {
     type: Object,
@@ -26,9 +24,6 @@ defineProps({
       />
     </div>
     <div class="p-4 grow">
-      <div class="flex flex-wrap gap-1 text-xs">
-        <SkillItem v-for="skill of project.skills" :skill="skill" />
-      </div>
       <h3 class="font-medium text-2xl mt-4" v-text="project.title"></h3>
       <p class="text-base mt-2" v-text="project.desc"></p>
     </div>
